@@ -10,3 +10,11 @@ countries.forEach(country => {
     fragment.appendChild(li);
 });
 uList.appendChild(fragment);
+
+// exercise 2
+
+function displayArticle() {
+    const article = document.getElementById('mobile');
+    article.style.display = (window.innerWidth > 500) ? 'none' : 'block';
+}
+window.onresize = displayArticle;
